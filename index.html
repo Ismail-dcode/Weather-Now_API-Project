@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="We.css">
+
+    <script src="https://kit.fontawesome.com/944d189c85.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="datetime-section">
+        <div class="datetime-container">
+            <div class="time-container">
+                <i class="fas fa-clock"></i>
+                <span id="timeDisplay"></span>
+            </div>
+            <div class="date-container">
+                <i class="fas fa-calendar-alt"></i>
+                <span id="dateDisplay"></span>
+            </div>
+            <div class="timezone-container">
+                <i class="fas fa-globe"></i>
+                <span id="timezoneDisplay"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Title Section -->
+    <section class="title-section">
+        <div class="title-content">
+            <h1>WeatherNow Pro</h1>
+            <p class="tagline">Stay updated with real-time weather conditions, forecasts, and temperature insights with our intuitive and responsive Weather Detail Website</p>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Real-Time Updates</h3>
+                    <p>Get instant weather information for any city worldwide</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-temperature-high"></i>
+                    <h3>Detailed Analysis</h3>
+                    <p>Comprehensive weather data including temperature, humidity, and wind</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access weather updates on any device, anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather-container">
+        <div class="search-container">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="search.png" alt="search"></button>
+        </div>
+        
+  
+        <div class="error-type">
+            <p>Invalid City Name!</p>
+        </div>
+
+        <div class="weather-content">
+            <img src="rain.png" class="weather_icon" alt="weather">
+            <h1 class="temp">--</h1>
+            <h2 class="city">City Name</h2>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <img src="humidity.png" alt="humidity">
+                    <div class="detail-info">
+                        <p class="humidity">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <img src="wind.png" alt="wind">
+                    <div class="detail-info">
+                        <p class="wind">-- km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>About WeatherNow Pro</h3>
+                <p>Version 2.0 | Powered by OpenWeather API</p>
+               
+            </div>
+            <div class="quick-tips">
+                <h3>Quick Tips</h3>
+                <ul>
+                    <li><i class="fas fa-keyboard"></i> Press Enter to search</li>
+                    <li><i class="fas fa-sync-alt"></i> Auto-updates every 5 minutes</li>
+                    <li><i class="fas fa-info-circle"></i> Click icons for more details</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Ismail-dcode/WeatherNow" target="_blank" class="github-link">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Code on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="We.js"></script>
+
+</body>
+
+</html>
