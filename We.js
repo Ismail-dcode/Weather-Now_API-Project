@@ -48,13 +48,13 @@ async function checkWeather(city) {
 
 function updateWeatherIcon(weatherMain) {
     const iconMap = {
-        'Clouds': 'clouds.png',
-        'Clear': 'clear.png',
-        'Rain': 'rain.png',
-        'Drizzle': 'drizzle.png',
-        'Mist': 'mist.png',
-        'Snow': 'snow.png',
-        'Thunderstorm': 'thunderstorm.png'
+        'Clouds': 'images/clouds.png',
+        'Clear': 'images/clear.png',
+        'Rain': 'images/rain.png',
+        'Drizzle': 'images/drizzle.png',
+        'Mist': 'images/mist.png',
+        'Snow': 'images/snow.png',
+        'Thunderstorm': 'images/thunderstorm.png'
     };
     weatherIcon.src = iconMap[weatherMain] || 'unknown.png';
 }
